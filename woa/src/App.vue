@@ -26,7 +26,7 @@ const currentRouteName = computed(() => router.currentRoute.value.name)
   <div
     id="tool-bar"
     ref="toolbar"
-    :class="{'h-24': isScrolled, 'h-[40rem]': !isScrolled && currentRouteName === 'home'}"
+    :class="{'h-24': isScrolled, 'h-[44rem]': !isScrolled && currentRouteName === 'home'}"
     class="p-6 sticky top-0 bg-[url('./src/assets/images/bus-crop.jpg')] transition-all ease-in-out duration-500"
   >
     <div
@@ -40,9 +40,10 @@ const currentRouteName = computed(() => router.currentRoute.value.name)
       </div>
       <div class="space-x-4">
         <RouterLink to="/recreate" class="text-white cursor-pointer">Recreate</RouterLink>
-        <RouterLink to="/about" class="text-white cursor-pointer">Events</RouterLink>
-        <RouterLink to="/about" class="text-white cursor-pointer">Programs</RouterLink>
-        <RouterLink to="/about" class="text-white cursor-pointer">Organizations</RouterLink>
+        <RouterLink to="/programs" class="text-white cursor-pointer">Programs</RouterLink>
+        <RouterLink to="/events" class="text-white cursor-pointer">Events</RouterLink>
+        <RouterLink to="/organizations" class="text-white cursor-pointer">Organizations</RouterLink>
+        <RouterLink to="/about" class="text-white cursor-pointer">FAQ</RouterLink>
         <RouterLink to="/about" class="text-white cursor-pointer">Get Involved</RouterLink>
       </div>
     </div>
@@ -54,7 +55,7 @@ const currentRouteName = computed(() => router.currentRoute.value.name)
 
   </div>
   <div>
-    <RouterView />
+    <RouterView class="z-0" />
   </div>
 </template>
 

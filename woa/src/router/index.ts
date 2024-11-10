@@ -19,6 +19,21 @@ const router = createRouter({
       name: 'recreate',
       component: () => import('../views/Recreate.vue'),
     },
+    {
+      path: '/events',
+      name: 'events',
+      component: () => import('../views/Events.vue'),
+    },
+    {
+      path: '/organizations',
+      name: 'organizations',
+      component: () => import('../views/Organizations.vue'),
+    },
+    {
+      path: '/programs',
+      name: 'programs',
+      component: () => import('../views/Programs.vue'),
+    },
   ],
 })
 
